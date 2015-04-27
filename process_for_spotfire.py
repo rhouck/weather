@@ -35,7 +35,7 @@ for d in dates:
 	ran = lat[1] - lat[0]
 	inc = ran / ndvi.shape[0]
 	lat_ind = [round((lat[0] + ind * inc), 5) for ind in range(ndvi.shape[0])]
-	lat_ind.reverse()
+	#lat_ind.reverse()
 	df.index = lat_ind
 
 	# replace column names with longitude values
